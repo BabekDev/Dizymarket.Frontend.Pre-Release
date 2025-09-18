@@ -10,16 +10,13 @@ $mobile-breakpoint: 480px;
 
 :root {
   --font-primary: var(--font-bricolage);
-
   --focus-outline-color: #99999953;
   --focus-outline-width: 1px;
   --focus-outline-offset: 5px;
-
   --color-content-bg: #1b1e1f;
   --color-text-primary: #ffffff;
   --color-accent-primary: #ebfd4a;
   --color-accent-secondary: #48ff86;
-
   --container-max-width: 1200px;
   --container-padding-x: 24px;
 }

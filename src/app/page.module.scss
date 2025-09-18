@@ -27,9 +27,13 @@
 
 .heroInner {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: 32px;
   padding: 48px 32px;
+}
+
+.heroInner > * {
+  min-width: 0;
 }
 
 .logo {
@@ -37,6 +41,8 @@
   opacity: 0;
   transform: translateY(12px);
   animation: fadeUp 700ms ease-out forwards;
+  max-width: 100%;
+  height: auto;
 }
 
 .kicker {
@@ -96,6 +102,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .heroDeco {
@@ -330,6 +338,7 @@
   .heroInner {
     grid-template-columns: 1fr;
     padding: 36px 24px;
+    gap: 24px;
   }
   .heroShot {
     transform: none;
@@ -343,6 +352,9 @@
   .page {
     padding: 28px var(--container-padding-x) 56px;
     gap: 32px;
+  }
+  .heroInner {
+    padding: 20px 16px;
   }
   .features {
     grid-template-columns: 1fr;

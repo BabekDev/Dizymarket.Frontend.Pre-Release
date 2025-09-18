@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.scss";
 
@@ -13,6 +13,12 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "DizyMarket — Marketplace for Digital Goods",
   description: "DizyMarket — Marketplace for Digital Goods",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
