@@ -70,10 +70,10 @@ export default function Home() {
           <div className={styles.heroMedia} aria-hidden>
             <div className={styles.heroDeco} />
             <Image
-              src="/1.png"
+              src="/2.png"
               alt="Preview of DizyMarket interface"
               width={1040}
-              height={640}
+              height={440}
               className={styles.heroShot}
               priority
             />
@@ -110,7 +110,7 @@ export default function Home() {
         className={`${styles.gallery} ${styles.container}`}
         aria-labelledby="gallery-title"
       >
-        <div className={styles.sectionHeader}>
+        <div className={styles.sectionHeader} style={{ padding: "0px 16px" }}>
           <h2 id="gallery-title" className={styles.sectionTitle}>
             A glimpse of the experience
           </h2>

@@ -98,7 +98,6 @@
 }
 
 .heroMedia {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +136,7 @@
 .heroShot {
   border: 1px solid rgba(255, 255, 255, 0.06);
   width: 100%;
-  max-width: 520px;
+  max-width: 400px;
   height: auto;
   transform: perspective(1200px) rotateY(-8deg) translateY(8px);
   transform-origin: center left;
@@ -318,9 +317,11 @@
 @keyframes floatY {
   0% {
     transform: translateY(0);
+    background: transparent;
   }
   100% {
     transform: translateY(8px);
+    background: transparent;
   }
 }
 
